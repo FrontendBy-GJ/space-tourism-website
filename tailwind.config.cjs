@@ -16,6 +16,10 @@ module.exports = {
           "url('/src/assets/destination/background-destination-tablet.jpg')",
         'destination-desktop-bg':
           "url('/src/assets/destination/background-destination-desktop.jpg')",
+        'crew-mobile-bg': "url('/src/assets/crew/background-crew-mobile.jpg')",
+        'crew-tablet-bg': "url('/src/assets/crew/background-crew-tablet.jpg')",
+        'crew-desktop-bg':
+          "url('/src/assets/crew/background-crew-desktop.jpg')",
       },
       colors: {
         light: '#D0D6F9',
