@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { hamburgerIcon, closeIcon, logo } from '../assets/shared';
 
 const Nav = () => {
@@ -28,7 +29,7 @@ const Nav = () => {
               key={link.link}
               className="md:first:ml-12 md:hover:border-b-2 xl:first:ml-32"
             >
-              <a href={link.href} className="md:inline-block md:pt-9">
+              <Link to={link.to} className="md:inline-block md:pt-9">
                 <span
                   aria-hidden="true"
                   className="mr-2 font-bold md:hidden xl:inline-block"
@@ -37,7 +38,7 @@ const Nav = () => {
                 </span>
 
                 {link.link}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -59,21 +60,21 @@ const links = [
   {
     link: 'Home',
     number: '00',
-    href: '#',
+    to: '/',
   },
   {
     link: 'Destination',
     number: '01',
-    href: '#',
+    to: '/destination',
   },
   {
     link: 'Crew',
     number: '02',
-    href: '#',
+    to: '/crew',
   },
   {
     link: 'Technology',
     number: '03',
-    href: '#',
+    to: '/technology',
   },
 ];
