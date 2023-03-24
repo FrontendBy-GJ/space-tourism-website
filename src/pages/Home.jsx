@@ -25,7 +25,10 @@ const Home = () => {
         {/* TODO */}
         {/* button to link tag (router) */}
         <div className="z-10 aspect-square w-36 self-end sm:w-60 lg:w-72 landscape:lg:ml-36">
-          <button className="relative inline-grid  h-full w-full place-items-center rounded-full bg-white font-bellefair text-xl font-normal uppercase tracking-widest text-dark ease-out before:absolute before:inset-0 before:-z-10 before:scale-[1.3] before:rounded-full before:bg-white/25 before:opacity-0 before:transition-all before:duration-700 before:hover:opacity-100 sm:text-3xl before:sm:scale-[1.4] lg:text-4xl">
+          <button
+            tabIndex={-1}
+            className="relative inline-grid  h-full w-full place-items-center rounded-full bg-white font-bellefair text-xl font-normal uppercase tracking-widest text-dark ease-out before:absolute before:inset-0 before:-z-10 before:scale-[1.3] before:rounded-full before:bg-white/25 before:opacity-0 before:transition-all before:duration-700 before:hover:opacity-100 sm:text-3xl before:sm:scale-[1.4] lg:text-4xl"
+          >
             Explore
           </button>
         </div>

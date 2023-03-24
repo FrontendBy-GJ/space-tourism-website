@@ -9,16 +9,19 @@ const Nav = () => {
     setNav((prev) => !prev);
   }
 
+  function show(e) {
+    if (e.key === 'Enter') {
+      setNav((prev) => !prev);
+    }
+  }
+
   return (
     <header className="fixed top-6 left-0 right-0 z-50 mx-auto flex  items-center justify-between px-7 md:pl-10 lg:top-10 3xl:pl-80">
-      <img
-        tabIndex={0}
-        src={logo}
-        alt="logo"
-        className="h-10 w-10 cursor-pointer"
-      />
+      <Link to="/">
+        <img src={logo} alt="logo" className="h-10 w-10 cursor-pointer" />
+      </Link>
 
-      <nav>
+      <nav aria-hidden={!nav ? 'true' : 'false'}>
         <ul
           className={`${
             nav ? 'translate-x-0' : 'translate-x-full md:translate-x-0'
@@ -29,7 +32,11 @@ const Nav = () => {
               key={link.link}
               className="md:first:ml-12 md:hover:border-b-2 xl:first:ml-32"
             >
-              <Link to={link.to} className="md:inline-block md:pt-9">
+              <Link
+                to={link.to}
+                className={`md:inline-block md:pt-9 ${!nav && 'hidden'}`}
+                onClick={toggleNav}
+              >
                 <span
                   aria-hidden="true"
                   className="mr-2 font-bold md:hidden xl:inline-block"
@@ -45,6 +52,8 @@ const Nav = () => {
       </nav>
 
       <img
+        tabIndex={0}
+        onKeyDown={show}
         src={nav ? closeIcon : hamburgerIcon}
         alt="menu button"
         className="z-50 h-5 w-6 cursor-pointer object-cover md:hidden"
