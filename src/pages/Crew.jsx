@@ -16,7 +16,7 @@ const Crew = () => {
         </h2>
 
         <div className="mx-auto flex flex-col items-center  md:mt-[60px] md:w-[458px] md:flex-col-reverse lg:m-0 lg:w-full lg:flex-row-reverse">
-          <div className="mx-auto mt-8 h-[223px] w-[327px] border-b-[1px] border-[#383B4B] md:h-[572px] md:w-[456.37px] md:border-none lg:h-[712px] lg:w-[568px]">
+          <div className="mx-auto mt-8 h-[223px] w-[327px] border-b-[1px] border-[#383B4B] md:h-[572px] md:w-[456.37px] md:border-none xl:h-[712px] xl:w-[568px]">
             {crew.map((item, index) => (
               <img
                 key={index}
@@ -70,7 +70,7 @@ const Crew = () => {
                 <span className="block font-bellefair uppercase text-white/50 md:text-2xl lg:text-[32px]">
                   {item.role}
                 </span>
-                <h3 className="mt-2 font-bellefair text-2xl uppercase text-white md:text-[40px] lg:mt-4 lg:text-[56px]">
+                <h3 className="mt-2 font-bellefair text-2xl uppercase text-white md:text-[40px] xl:mt-4 xl:text-[56px]">
                   {item.name}
                 </h3>
                 <p className="mt-4 font-barlow text-[15px] text-light md:text-base lg:mt-7 lg:w-[444px] lg:text-lg">
