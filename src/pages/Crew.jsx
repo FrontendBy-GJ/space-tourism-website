@@ -4,7 +4,7 @@ import { crew } from './data.json';
 const Crew = () => {
   const [curentCrew, setCurentCrew] = useState(0);
 
-  const toogleCrew = (index) => {
+  const toggleCrew = (index) => {
     setCurentCrew(index);
   };
 
@@ -33,28 +33,32 @@ const Crew = () => {
             <ul className="my-8 mx-auto flex h-[10px] w-[88px] justify-between lg:mx-0 lg:mt-[120px]">
               <li
                 tabIndex={0}
-                onClick={() => toogleCrew(0)}
+                onClick={() => toggleCrew(0)}
+                onKeyDown={(e) => (e.key === 'Enter' ? toggleCrew(0) : null)}
                 className={`h-full w-[10px] cursor-pointer rounded-full ${
                   curentCrew === 0 ? 'bg-white' : 'bg-white/25 hover:bg-white'
                 }`}
               ></li>
               <li
                 tabIndex={0}
-                onClick={() => toogleCrew(1)}
+                onClick={() => toggleCrew(1)}
+                onKeyDown={(e) => (e.key === 'Enter' ? toggleCrew(1) : null)}
                 className={`h-full w-[10px] cursor-pointer rounded-full ${
                   curentCrew === 1 ? 'bg-white' : 'bg-white/25 hover:bg-white'
                 }`}
               ></li>
               <li
                 tabIndex={0}
-                onClick={() => toogleCrew(2)}
+                onClick={() => toggleCrew(2)}
+                onKeyDown={(e) => (e.key === 'Enter' ? toggleCrew(2) : null)}
                 className={`h-full w-[10px] cursor-pointer rounded-full ${
                   curentCrew === 2 ? 'bg-white' : 'bg-white/25 hover:bg-white'
                 }`}
               ></li>
               <li
                 tabIndex={0}
-                onClick={() => toogleCrew(3)}
+                onClick={() => toggleCrew(3)}
+                onKeyDown={(e) => (e.key === 'Enter' ? toggleCrew(3) : null)}
                 className={`h-full w-[10px] cursor-pointer rounded-full ${
                   curentCrew === 3 ? 'bg-white' : 'bg-white/25 hover:bg-white'
                 }`}
