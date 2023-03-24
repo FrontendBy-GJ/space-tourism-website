@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Crew from './pages/Crew';
 import Destination from './pages/Destination';
 import Home from './pages/Home';
+import Technology from './pages/Technology';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/destination" element={<Destination />}></Route>
             <Route path="/crew" element={<Crew />}></Route>
+            <Route path="/technology" element={<Technology />}></Route>
           </Routes>
         </main>
       </BrowserRouter>

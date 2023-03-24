@@ -20,6 +20,12 @@ module.exports = {
         'crew-tablet-bg': "url('/src/assets/crew/background-crew-tablet.jpg')",
         'crew-desktop-bg':
           "url('/src/assets/crew/background-crew-desktop.jpg')",
+        'technology-mobile-bg':
+          "url('/src/assets/technology/background-technology-mobile.jpg')",
+        'technology-tablet-bg':
+          "url('/src/assets/technology/background-technology-tablet.jpg')",
+        'technology-desktop-bg':
+          "url('/src/assets/technology/background-technology-desktop.jpg')",
       },
       colors: {
         light: '#D0D6F9',
