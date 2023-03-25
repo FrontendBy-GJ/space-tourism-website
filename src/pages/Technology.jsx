@@ -59,7 +59,7 @@ const Technology = () => {
                 key={index}
                 className={`${
                   fact === index ? 'block' : 'hidden'
-                } mx-auto pt-[26px] text-center md:pt-11 lg:text-left`}
+                } mx-auto pt-[26px] text-center md:pt-11 md:pb-24 lg:text-left`}
               >
                 <span className="block font-barlow-condensed text-sm uppercase text-light md:text-base">
                   the terminology...
