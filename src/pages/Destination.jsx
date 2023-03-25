@@ -31,7 +31,11 @@ const Destination = () => {
           <ul className="mx-auto mt-7 flex h-7 w-[237px] justify-between md:mt-[53px] md:h-[34px] md:w-[285px] lg:m-0">
             {destinations.map((item, index) => (
               <li
+                tabIndex={0}
                 onClick={() => toggleTab(index)}
+                onKeyDown={(e) =>
+                  e.key === 'Enter' ? setCurrentTab(index) : null
+                }
                 key={index}
                 className={`cursor-pointer font-barlow-condensed text-sm uppercase tracking-widest text-light ${
                   currentTab === index ? 'border-b-2' : 'hover:border-b-2'
