@@ -7,25 +7,24 @@ module.exports = {
         '3xl': '2560px',
       },
       backgroundImage: {
-        'mobile-bg': "url('/src/assets/home/background-home-mobile.jpg')",
-        'tablet-bg': "url('/src/assets/home/background-home-tablet.jpg')",
-        'desktop-bg': "url('/src/assets/home/background-home-desktop.jpg')",
+        'mobile-bg': "url('./assets/home/background-home-mobile.jpg')",
+        'tablet-bg': "url('./assets/home/background-home-tablet.jpg')",
+        'desktop-bg': "url('./assets/home/background-home-desktop.jpg')",
         'destination-mobile-bg':
-          "url('/src/assets/destination/background-destination-mobile.jpg')",
+          "url('./assets/destination/background-destination-mobile.jpg')",
         'destination-tablet-bg':
-          "url('/src/assets/destination/background-destination-tablet.jpg')",
+          "url('./assets/destination/background-destination-tablet.jpg')",
         'destination-desktop-bg':
-          "url('/src/assets/destination/background-destination-desktop.jpg')",
-        'crew-mobile-bg': "url('/src/assets/crew/background-crew-mobile.jpg')",
-        'crew-tablet-bg': "url('/src/assets/crew/background-crew-tablet.jpg')",
-        'crew-desktop-bg':
-          "url('/src/assets/crew/background-crew-desktop.jpg')",
+          "url('./assets/destination/background-destination-desktop.jpg')",
+        'crew-mobile-bg': "url('./assets/crew/background-crew-mobile.jpg')",
+        'crew-tablet-bg': "url('./assets/crew/background-crew-tablet.jpg')",
+        'crew-desktop-bg': "url('./assets/crew/background-crew-desktop.jpg')",
         'technology-mobile-bg':
-          "url('/src/assets/technology/background-technology-mobile.jpg')",
+          "url('./assets/technology/background-technology-mobile.jpg')",
         'technology-tablet-bg':
-          "url('/src/assets/technology/background-technology-tablet.jpg')",
+          "url('./assets/technology/background-technology-tablet.jpg')",
         'technology-desktop-bg':
-          "url('/src/assets/technology/background-technology-desktop.jpg')",
+          "url('./assets/technology/background-technology-desktop.jpg')",
       },
       colors: {
         light: '#D0D6F9',
