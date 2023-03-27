@@ -22,7 +22,7 @@ const Destination = () => {
                 key={index}
                 className={currentTab === index ? 'block' : 'hidden'}
                 src={item.images.png}
-                alt=""
+                alt={item.name}
               />
             ))}
           </div>
