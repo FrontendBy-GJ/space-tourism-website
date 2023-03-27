@@ -22,14 +22,14 @@ const Technology = () => {
             >
               <img
                 src={item.images.portrait}
-                alt=""
+                alt={item.name}
                 className={`${
                   fact === index ? 'block portrait:hidden' : 'hidden'
                 } mx-auto`}
               />
               <img
                 src={item.images.landscape}
-                alt=""
+                alt={item.name}
                 className={`${
                   fact === index ? 'block landscape:hidden' : 'hidden'
                 } mx-auto`}
