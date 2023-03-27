@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { hamburgerIcon, closeIcon, logo } from '../assets/shared';
+import { hamburgerIcon, closeIcon, logo } from '../../public/assets/shared';
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
