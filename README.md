@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/space-tourism-multi-page-website-K2TOm0mPzR)
+- Live Site URL: [Live site](https://garciajr-space-tourism.netlify.app/)
 
 ## My process
 
