@@ -59,7 +59,7 @@ const Technology = () => {
                 key={index}
                 className={`${
                   fact === index ? 'block' : 'hidden'
-                } mx-auto pt-[26px] text-center md:pt-11 md:pb-24 lg:text-left`}
+                } mx-auto pt-[26px] text-center md:pt-11 md:pb-24 lg:pt-[137px] lg:text-left`}
               >
                 <span className="block font-barlow-condensed text-sm uppercase text-light md:text-base">
                   the terminology...
@@ -67,7 +67,7 @@ const Technology = () => {
                 <h3 className="font-bellefair text-2xl uppercase text-white md:pt-4 md:text-[40px] md:leading-[45px] lg:pt-3 lg:text-[56px] lg:leading-[64px]">
                   {item.name}
                 </h3>
-                <p className="mx-auto w-[327px] font-barlow leading-6 text-light md:w-[458px] md:pt-5 md:text-base lg:w-[444px] lg:pt-4 lg:text-lg lg:leading-8">
+                <p className="mx-auto w-[327px] pt-4 font-barlow leading-6 text-light md:w-[458px] md:pt-5 md:text-base lg:w-[444px] lg:pt-4 lg:text-lg lg:leading-8">
                   {item.description}
                 </p>
               </article>
