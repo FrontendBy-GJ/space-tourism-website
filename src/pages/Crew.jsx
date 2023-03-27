@@ -21,7 +21,7 @@ const Crew = () => {
               <img
                 key={index}
                 src={item.images.png}
-                alt=""
+                alt={`${item.role} ${item.name}`}
                 className={`mx-auto h-full object-cover ${
                   curentCrew === index ? 'block' : 'hidden'
                 }`}
